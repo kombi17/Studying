@@ -97,7 +97,8 @@
 <details>
     <summary style="font-size : 20px;"><strong>  Q. static 에 대해 설명하시오.   </strong></summary></br>
     
-    추후 정리하여 추가 예정
+    static 키워드를 사용하면 클래스가 메모리에 올라갈 때 자동으로 생성되며 로딩이 끝나면 바로 사용이 가능합니다. 즉, 객체 생성 없이 즉시 사용할 수 있습니다. 프로그램이 종료될 때 소멸됩니다. 
+    static 변수는 같은 클래스 타입의 객체들이 공유할 수 있고 static 메서드는 객체에 의존적이지 않은 작업을 수행할 수 있습니다. 오버라이딩이 불가능합니다. 
     
 </details></br>
 
@@ -109,5 +110,21 @@
     스택(Stack) 영역 : 지역변수와 매개변수, 리턴 값 등이 생성되는 영역입니다. 
     힙(Heap) 영역 : new 연산자를 통해 생성되는 객체(인스턴스), 배열 등이 이 영역에 저장되며, 가비지 컬렉션에 의해 메모리가 관리됩니다. 
     
+</details></br>
+
+<details>
+    <summary style="font-size : 20px;"><strong>  Q. new String()과 리터럴("")의 차이에 대해 설명하시오.   </strong></summary></br>
+    
+    new 연산자를 사용하면 Heap 영역에 저장되고 리터럴은 Heap 영역의 String Constant Pool에 저장됩니다. 리터럴의 경우 이미 존재하는 경우 재사용 가능하지만 new 연산자를 사용하면 매번 새로운 객체를 생성합니다.     
+    
+</details></br>
+
+<details>
+    <summary style="font-size : 20px;"><strong>  Q. Java 컬렉션 프레임워크에 대해 설명하시오.   </strong></summary></br>
+    
+    다수의 데이터를 쉽고 효과적으로 관리하기 위한 표준화된 방법을 제공하는 클래스의 집합으로 대표적으로 List, Set, Map이 있습니다. 
+    List : 순서가 있는 데이터의 집합, 중복 허용
+    Set : 순서가 없는 데이터의 집합, 중복 비허용, 순서가 없기 때문에 데이터 처리 속도는 빠르지만 별도로 목록화하기 위해서는 Iterator 작업이 필요합니다. 
+    Map : Key와 Value 값을 한 쌍으로 묶어 데이터의 집합을 형성하며 key는 set의 형태로 순서가 없고 중복값을 허용하지 않으며 value는 list의 형태로 값의 중복이 일어날 수 있습니다. 
     
 </details></br>
